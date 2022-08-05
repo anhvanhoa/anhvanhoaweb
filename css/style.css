@@ -11,11 +11,9 @@ html {
 #heading {
     display: flex;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 25px;
     height: 60px;
     background-color: #111111;
-    justify-content: space-between;
-    /* box-shadow: 0 0px 10px rgb(237, 182, 253); */
 }
 
 .logo {
@@ -23,7 +21,6 @@ html {
     font-size: 2.2rem;
     color: #ff6060;
     height: 40px;
-    text-align: center;
     line-height: 40px;
     letter-spacing: 1px;
     position: relative;
@@ -58,19 +55,20 @@ html {
         transform: translateX(3%);
     }
 }
-
 .menu-mobile {
     color: #fff;
-    font-size: 3rem;
+    font-size: 2.5rem;
     position: absolute;
     right: 20px;
     cursor: pointer;
     display: none;
 }
 
-.navigation ul {
+.navigation{
+    flex: 1;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .item-nav {
@@ -84,6 +82,10 @@ html {
 
 .nav-mobile {
     display: none;
+}
+
+.nav-mobile i{
+    font-size: 2rem;
 }
 
 .select.item-nav::before {
@@ -108,7 +110,6 @@ html {
     align-items: center;
     justify-content: flex-end;
     position: relative;
-    /* border: #fff solid 1px; */
 }
 
 
@@ -246,8 +247,8 @@ html {
      padding: 6px 10px;
      border-radius: 50%;
      cursor: pointer;
-}
-
+    }
+    
 .fa-xmark:hover {
     background-color: rgb(205, 205, 205);
 }
@@ -274,80 +275,28 @@ html {
 .info-img img {
     border-radius: 50%;
     box-shadow: -3px -3px 2px rgba(255, 255, 255, 0.3),
-                5px 5px 5px  rgba(0, 0, 0, 0.2),
-                15px 15px 15px  rgba(0, 0, 0, 0.2);
+    5px 5px 5px  rgba(0, 0, 0, 0.2),
+    15px 15px 15px  rgba(0, 0, 0, 0.2);
     width: 200px;
     height: 200px;
     object-fit: cover;
 }
-
+    
 /* CONTAINER */
-
-
-/* Slider */
-
-.slider {
-    height: 380px;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 50px;
-}
-
-.slider-one {
-    /* border: #fff solid 1px; */
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    position: relative;
-    border: transparent solid 8px;
-}
-
-.slider-one img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    image-rendering: optimizeQuality;
-}
-
-/* Thư viện swiper */
-
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-}
-
-.swiper-pagination-bullet {
-    background-color: #fff;
-}
+    
 
 /* Post */
 
 .product,
 .post {
-    margin: 50px 0;
+    margin-top: 50px;
+    padding: 20px;
     background-color: #303030;
     position: relative;
-    padding: 5px;
 }
 
 .header-post {
-    height: 40%;
-    padding: 50px 200px;
+    padding: 50px;
     text-align: center;
     font-size: 5rem;
     color: orange;
@@ -356,15 +305,10 @@ html {
 }
 
 .box-post {
-    height: 55%;
-    display: flex;
-    justify-content: space-around;
-    margin: 10px 0;
-}
-
-.item-post {
-    width: 24%;
-    padding: 10px 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: auto;
+    grid-gap: 30px;
 }
 
 .item-post:hover.item-post img{
@@ -381,7 +325,7 @@ html {
 
 .img-post {
     width: 100%;
-    height: 60%;
+    height: 250px;
     overflow: hidden;
     border-radius: 15px;
 }
@@ -407,8 +351,8 @@ html {
 }
 
 .btn-more {
-    width: 18%;
-    height: 40px;
+    margin-top: 50px;
+    padding: 10px 50px;
     background-color: transparent;
     position: relative;
     bottom: 10px;
@@ -424,7 +368,7 @@ html {
     background-color: #111111a4;
 }
 
-/* Post new */
+/* Post related */
 
 .header {
     text-align: center;
@@ -435,63 +379,9 @@ html {
     padding-top: 50px;
 }
 
-.post-new {
-    height: 250px;
-    display: flex;
-    margin-top: 50px;
-}
-
-.img-post-new {
-    width: 40%;
-    height: 100%;
-}
-
-.img-post-new img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-.info-post-new {
-    padding-left: 80px;
-}
-
-
-.title-post-new {
-    font-size: 2.6rem;
-    font-weight: 800;
-    color: #fff;
-    margin: 10px 0;
-}
-
-.content-post-new {
-    margin-top: 30px;
-    margin-left: 20px;
-    font-size: 1.5rem;
-    color: #fff;
-    line-height: 23px;
-}
-
-/* Post related */
-
-.header-related {
-    font-size: 2.5rem;
-    color: #fff;
-    font-weight: 600;
-    margin-top: 50px;
-    padding-left: 20px;
-}
-
-.post-related {
-    margin: 30px 0;
-    height: 250px;
-    display: flex;
-}
 
 .item-related {
-    width: 25%;
-    margin: 0 10px;
+    margin: 30px 10px;
 }
 
 .item-related:hover .img-related {
@@ -501,7 +391,7 @@ html {
 
 .img-related {
     width: 100%;
-    height: 80%;
+    height: 250px;
 }
 
 .img-related img {
@@ -521,7 +411,7 @@ html {
 
 .layout-product {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
     grid-template-rows: auto;
     grid-gap: 20px;
     padding: 20px;
@@ -549,7 +439,7 @@ html {
 
 .item-product img {
     width: 100%;
-    height: 220px;
+    height: 250px;
     border-radius: 15px;
     object-fit: cover;
 }  
