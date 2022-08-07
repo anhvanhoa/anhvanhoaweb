@@ -150,7 +150,7 @@ html {
     font-size: 1.5rem;
     background-color: transparent;
     color: #fff;
-    width: 170px;
+    width: 230px;
 }
 
 .box-search i {
@@ -281,15 +281,95 @@ html {
     height: 200px;
     object-fit: cover;
 }
+
+.certificate {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.certificate:hover {
+    background-color: orange;
+}
     
 /* CONTAINER */
-    
+.layout_search {
+    position: relative;    
+    margin-top: 90px; 
+    display: none;
+}
+
+.box_search {
+    height: 190px;
+    padding: 20px 20px;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-snap-stop: always;
+    position: relative;
+}
+
+.layout_search-header {
+    font-size: 2.3rem;
+    position: absolute;
+    bottom: 100%;
+    left: 40px;
+    color: orange;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box_search::-webkit-scrollbar {
+    height: 10px;
+}
+
+
+.box_search::-webkit-scrollbar-thumb {
+    background-color: #1a1a1a;
+    padding: 50px;
+    border-radius: 50px;
+}
+
+.box_search::-webkit-scrollbar-track {
+    background-color: #303030;
+    border: 1px solid #111111;
+    border-radius: 50px;
+}
+
+.search_item {
+    background-color: #303030;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    min-width: 30%;
+    max-width: 30%;
+    margin-right: 25px;
+    padding: 15px;
+    border-radius: 20px;
+    scroll-snap-align: start;
+}
+
+.search_item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.search_item .search_item-title {
+    font-size: 1.7rem;
+    margin-left: 10px;
+    color: #fff;
+    flex: 1;
+}
+
+.layout_search-move {
+    display: block;
+}
 
 /* Post */
 
 .product,
 .post {
-    margin-top: 50px;
+    margin-top: 70px;
     padding: 20px;
     background-color: #303030;
     position: relative;
@@ -314,7 +394,7 @@ html {
 .item-post:hover.item-post img{
     opacity: 0.6;
     box-shadow: 0px 0px 3px 3px #fff;
-    width: 150%;
+    /* width: 150%; */
     transform: scale(120%);
     transition: transform ease 0.4s;
 }
@@ -340,7 +420,6 @@ html {
 .title-post {
     margin: 10px 5px;
     color: #fff;
-    /* height: 50px; */
     line-height: 29px;
     font-size: 1.7rem;
     -webkit-line-clamp: 3;
@@ -376,7 +455,7 @@ html {
     color: orange;
     font-weight: 600;    
     font-family: 'Encode Sans', sans-serif;
-    padding-top: 50px;
+    margin: 60px 0 30px 0;
 }
 
 
@@ -423,6 +502,10 @@ html {
     background-color: #202020;
     padding: 10px;
     border-radius: 10px;
+}
+
+.item-product:hover {
+    background-color: rgb(24, 24, 24);
 }
 
 .hashtag-product {
@@ -538,6 +621,10 @@ html {
     color: rgb(255, 255, 255);
     letter-spacing: 1px;
     opacity: 0.8;
+}
+
+.footer-link:hover {
+    color: orange
 }
 
 .btn-design {

@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="./icon/css/all.min.css">
     <link rel="stylesheet" href="./css/reset-css.css">
     <link rel="stylesheet" href="./css/grid.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/blog.css">
     <link rel="stylesheet" href="./css/responsive.css">
@@ -60,7 +59,7 @@
                     </div>
                 </div>
                 <div class="box-search">
-                    <input type="text" placeholder="Tìm Kiếm">
+                    <input type="text" placeholder="Tìm Kiếm" class="input">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
                 <div class="profile">
@@ -103,99 +102,41 @@
 
         <div id="container">
             <div class="grid wide">
-                    <div class="row c-1 cm-1 t-1 m-1 mm-1">
-                        <div class="header-blog">
-                            The blog review
+                <div class="row c-1 layout_search">
+                    <div class="layout_search-header">
+                        Kết quả tìm kiếm
+                    </div>
+                    <div class="box_search">
+                    </div>
+                </div>
+                <div class="row c-1 cm-1 t-1 m-1 mm-1">
+                    <div class="header-blog">
+                        The blog review
+                    </div>
+                </div>
+
+                <!-- <div class="row c-1 cm-1t-1 m-1 mm-1">
+                    <div class="hashtag-blog">
+                        <div class="name-hashtag-blog">
+                            Thêm hashtag 
+                        </div>
+                        <div class="list-hashtag-blog">
+                            <li>Sản phẩm du lịch</li>
+                            <li>Sản phẩm công nghệ</li>
+                            <li>Sản phẩm decor</li>
+                            <li>Sản phẩm gia đình</li>
                         </div>
                     </div>
+                </div> -->
 
-                    <div class="row c-1 cm-1t-1 m-1 mm-1">
-                        <div class="hashtag-blog">
-                            <div class="name-hashtag-blog">
-                                Thêm hashtag 
-                            </div>
-                            <div class="list-hashtag-blog">
-                                <li>Sản phẩm du lịch</li>
-                                <li>Sản phẩm công nghệ</li>
-                                <li>Sản phẩm decor</li>
-                                <li>Sản phẩm gia đình</li>
-                            </div>
+                <div class="row c-3 cm-3 t-2 m-1 mm-1 layout-review">
+                    <div class="review">
+                        <div class="img-review">
+                            <img src="https://images.pexels.com/photos/462118/pexels-photo-462118.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
                         </div>
-                    </div>
-
-                    <div class="row c-3 cm-3 t-2 m-1 mm-1 layout-review">
-                            <div class="review">
-                                <div class="img-review">
-                                    <img src="https://images.pexels.com/photos/462118/pexels-photo-462118.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
-                                </div>
-                                <div class="title-review">
-                                    Hình ảnh review phong cảnh 
-                                </div>
-                            </div>
-                            <div class="review">
-                                <div class="img-review">
-                                    <img src="https://images.unsplash.com/photo-1452421822248-d4c2b47f0c81?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fHRyYXZlbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
-                                </div>
-                                <div class="title-review">
-                                    Hình ảnh review
-                                </div>
-                            </div>
-                            <div class="review">
-                                <div class="img-review">
-                                    <img src="https://images.unsplash.com/photo-1524850011238-e3d235c7d4c9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzZ8fHRyYXZlbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
-                                </div>
-                                <div class="title-review">
-                                    Hình ảnh review phong cảnh 
-                                </div>
-                            </div>
-                            <div class="review">
-                                <div class="img-review">
-                                    <img src="https://images.unsplash.com/photo-1541410965313-d53b3c16ef17?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fHRyYXZlbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
-                                </div>
-                                <div class="title-review">
-                                    Hình ảnh review
-                                </div>
-                            </div>
-                            <div class="review">
-                                <div class="img-review">
-                                    <img src="https://images.unsplash.com/photo-1502003148287-a82ef80a6abc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDB8fHRyYXZlbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
-                                </div>
-                                <div class="title-review">
-                                    Hình ảnh review phong cảnh
-                                </div>
-                            </div>
-                            <div class="review">
-                                <div class="img-review">
-                                    <img src="https://images.unsplash.com/photo-1437846972679-9e6e537be46e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDN8fHRyYXZlbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
-                                </div>
-                                <div class="title-review">
-                                    Hình ảnh review
-                                </div>
-                            </div>
-                            <div class="review">
-                                <div class="img-review">
-                                    <img src="https://images.unsplash.com/photo-1551918120-9739cb430c6d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTF8fHRyYXZlbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
-                                </div>
-                                <div class="title-review">
-                                    Hình ảnh review phong Hình ảnh review phongs
-                                </div>
-                            </div>
-                            <div class="review">
-                                <div class="img-review">
-                                    <img src="https://images.unsplash.com/photo-1497262693247-aa258f96c4f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTJ8fHRyYXZlbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
-                                </div>
-                                <div class="title-review">
-                                    Hình ảnh review phong
-                                </div>
-                            </div>
-                            <div class="review">
-                                <div class="img-review">
-                                    <img src="https://images.unsplash.com/photo-1497262693247-aa258f96c4f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTJ8fHRyYXZlbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
-                                </div>
-                                <div class="title-review">
-                                    Hình ảnh review phong
-                                </div>
-                            </div>
+                        <div class="title-review">
+                            Hình ảnh review phong cảnh 
+                        </div>
                     </div>
                 </div>
             </div>
@@ -229,7 +170,6 @@
                                 </a>
                                 <button class="btn-design">
                                     Chạy ADS
-                                    <!-- <i class="fa-solid fa-plus"></i> -->
                                 </button>
                             </div>
                             <div class="item-footer">
@@ -268,8 +208,6 @@
             </div>
         </div>
     </div>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="./js/main.js"></script>
-    <script src="./js/blog.js"></script>
+    <script type="module" src="./js/blog.js"></script>
 </body>
 </html>

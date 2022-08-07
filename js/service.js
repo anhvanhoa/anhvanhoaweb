@@ -34,7 +34,7 @@ function formHide() {
   document.querySelector('.form-maintenance').style.display = 'block'
 }
 
-for(list_item_option of list_item_options) {
+for(var list_item_option of list_item_options) {
   list_item_option.onclick = (e) => {
     name_service.innerText = e.target.childNodes[0].textContent.trim()
     for(message_link of message_links) {
@@ -290,7 +290,7 @@ function Comma(value) {
   return value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')
 }
 
-for(comma of commas) {
+for(var comma of commas) {
   comma.innerText = Comma(comma.innerText) + " VND"
 }
 return total_money
@@ -430,7 +430,7 @@ select_payment.onclick = () => {
   list_payment.classList.toggle('list-payment-move')
 }
 
-for(list_select_payment of list_select_payments) {
+for(var list_select_payment of list_select_payments) {
   list_select_payment.onclick = (e) => {
     select_payment.children[0].innerText = e.target.innerText
     if(e.target.innerText == 'Ngân hàng') {
@@ -473,6 +473,9 @@ btn_service[1].onclick = () => {
   } 
 }
 
+
+import main from './main.js'
+
 // add "," number
 
 // var commas = document.querySelectorAll('.comma')
@@ -484,4 +487,3 @@ btn_service[1].onclick = () => {
 // for(comma of commas) {
 //     comma.innerText = Comma(comma.innerText) + " VND"
 // }
-

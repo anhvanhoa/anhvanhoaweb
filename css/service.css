@@ -63,6 +63,10 @@
     background-color: #38383899;
 }
 
+.item-service-social:hover {
+    transform: scale(105%);
+}
+
 .select-social {
     color: #fff;
     background-color: #202020;
@@ -71,14 +75,14 @@
 }
 
 .banner {
-    width: 50%;
+    width: 40%;
     padding: 0 20px;
 }
 
 
 .img-banner img {
     width: 100%;
-    height: 250px;
+    height: 300px;
     object-fit: cover;
     border-radius: 10px;
 }
@@ -257,6 +261,7 @@ input[type="radio"] {
 }
 
 .maintenance {
+    /* max-width: 500px; */
     text-align: center;
     color: rgb(255, 174, 52);
     font-size: 5rem;
